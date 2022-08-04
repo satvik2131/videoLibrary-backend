@@ -24,4 +24,4 @@ app.use(cookieParser());
 app.use('/', videoRouter);
 
 app.listen(port,()=>{console.log("hola")});
-// module.exports = app;
+module.exports = app;
