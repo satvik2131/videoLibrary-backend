@@ -6,8 +6,6 @@ var videoRouter = require('./routes/video');
 var admin = require("firebase-admin");
 var serviceAccount = require("./videoLibraryKey.json");
 
-const PORT = process.env.PORT;
-
 //ADMIN SDK INITIALIZATION
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
@@ -22,5 +20,5 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/', videoRouter);
 
-app.listen(PORT,()=>{console.log("hola")});
+app.listen(5000,()=>{console.log("hola")});
 // module.exports = app;
