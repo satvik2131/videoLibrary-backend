@@ -21,5 +21,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/', videoRouter);
 
-app.listen(port,()=>{console.log("hola")});
 module.exports = app;
