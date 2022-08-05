@@ -3,7 +3,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var videoRouter = require('../routes/video');
 var admin = require("firebase-admin");
-var serviceAccount = require("../videoLibraryKey.json");
+var serviceAccount = require("../videoLibrarykey.json");
 
 var port = process.env.PORT || 5000;
 
